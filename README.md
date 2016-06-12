@@ -25,3 +25,22 @@ This comes with data incase the datastore causes issues
    3. Group member A, Initial script
 
 6. Make a figure with subplots A and B
+
+###Tips
+import pandas as pd
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+df = pd.read_csv('data_location')
+df = df[df['column_name'] == something]
+
+df['column_name'].dropna()
+
+df['column_name'].hist()
+
+new_df = df[[something, something, etc.]]
+
+df.plot(x = 'something', y = 'something2', kind = 'type of plot')
+url:
+http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html
+
